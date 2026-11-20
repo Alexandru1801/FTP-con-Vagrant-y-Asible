@@ -34,3 +34,21 @@ Con este proyecto vamos a desplegar y configurar de forma automática, mediante 
 
 \* \*\*FileZilla / WinSCP:\*\* Cliente FTP gráfico para comprobar el acceso, los certificados y la subida de archivos.
 
+
+
+
+
+\## Instrucciones iniciales de uso
+
+
+
+\### Requisitos
+
+\* Tener instalados \*\*Git\*\*, \*\*VirtualBox\*\* y \*\*Vagrant\*\* en el equipo anfitrión.
+
+
+
+\### Puesta en marcha
+
+1\. Clonar el repositorio y entrar en la carpeta del proyecto
+
