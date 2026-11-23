@@ -5,8 +5,9 @@
 set -xeu
 
 # Instalar ansible
+date -s "$(python3 -c 'import urllib.request; print(urllib.request.urlopen("http://deb.debian.org").headers["Date"])')"
 apt-get update
-apt-get install -y ansible ansible-lint whois
+apt-get -o DPkg::Lock::Timeout=120 install -y ansible ansible-lint whois
 
 #
 # Copia clave privada de Vagrant para conectarse a las MVs
@@ -25,11 +26,11 @@ chmod 600 ./private_keys/*
 # Descomentar las siguientes líneas según vayamos teniendo los ficheros y
 # hacer `vagrant provision ansible`
 
-# cp -vf /vagrant/ansible.cfg .
-# chown vagrant:vagrant ./ansible.cfg
+ cp -vf /vagrant/ansible.cfg .
+ chown vagrant:vagrant ./ansible.cfg
 
-# cp -vf /vagrant/inventory.yml .
-# chown vagrant:vagrant ./inventory.yml
+ cp -vf /vagrant/inventory.yml .
+ chown vagrant:vagrant ./inventory.yml
 
 # cp -vf /vagrant/requirements.yml .
 # chown vagrant:vagrant ./inventory.yml
