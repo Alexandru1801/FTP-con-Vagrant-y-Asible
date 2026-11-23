@@ -1,0 +1,4 @@
+zone "alexandru.test" {
+    type master;
+    file "/var/lib/bind/db.alexandru.test";
+};
