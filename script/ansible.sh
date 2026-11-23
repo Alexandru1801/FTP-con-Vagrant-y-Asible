@@ -35,8 +35,8 @@ chmod 600 ./private_keys/*
 # cp -vf /vagrant/requirements.yml .
 # chown vagrant:vagrant ./inventory.yml
 
-# cp -vrf /vagrant/dns .
-# chown -R vagrant:vagrant ./dns
+ cp -vrf /vagrant/dns .
+ chown -R vagrant:vagrant ./dns
 
 # cp -vrf /vagrant/web .
 # chown -R vagrant:vagrant ./web
