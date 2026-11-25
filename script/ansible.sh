@@ -38,8 +38,8 @@ chmod 600 ./private_keys/*
  cp -vrf /vagrant/dns .
  chown -R vagrant:vagrant ./dns
 
-# cp -vrf /vagrant/web .
-# chown -R vagrant:vagrant ./web
+cp -vrf /vagrant/web .
+chown -R vagrant:vagrant ./web
 
 # cp -vrf /vagrant/ftp .
 # chown -R vagrant:vagrant ./ftp
